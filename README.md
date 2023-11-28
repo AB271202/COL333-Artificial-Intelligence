@@ -1,4 +1,4 @@
-# COL334
+# COL333
 
 The repository for the course COL333: Artificial Intelligence
 
