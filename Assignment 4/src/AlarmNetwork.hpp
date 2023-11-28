@@ -46,7 +46,10 @@ void disp(std::vector<T> v)
     std::cout << std::endl;
 }
 
-AlarmNetwork::AlarmNetwork() { outfile.open("solved_alarm.bif"); }
+AlarmNetwork::AlarmNetwork()
+{
+    outfile.open("solved_alarm.bif");
+}
 
 void AlarmNetwork::readNetwork(std::string bifFile)
 {
@@ -130,6 +133,9 @@ void AlarmNetwork::readNetwork(std::string bifFile)
                     ss2 >> temp;
                 }
                 listIt->set_CPT(curr_CPT);
+            }
+            else
+            {
             }
         }
         if (find == 1)
@@ -243,6 +249,7 @@ void AlarmNetwork::normalize2(std::vector<float> &newCPT, int nvalues, std::vect
             smoothing_factor = 1.0f;
         else if (zeroflag)
             smoothing_factor = ((sum) / (nvalues)) * 0.04f;
+            // smoothing_factor =( sum/(nvalues*3.0f))*0.01f;
         for (int j = 0; j < nvalues; j++)
         {
             newCPT[i+j*cols]=(newCPT[i+j*cols]+ smoothing_factor)/(sum+nvalues*(smoothing_factor));
@@ -275,9 +282,6 @@ void AlarmNetwork::normalize2(std::vector<float> &newCPT, int nvalues, std::vect
                 parent_values.push_back(cpy_i / possible_values_cpy);
                 cpy_i %= possible_values_cpy;
             }
-            // get the
-            // std::cout << "I'm here" << std::endl;
-
             for (int j = 0; j < parents.size(); j++)
             {
                 for (int k = 0; k < variable_nvalues[parents[j]]; k++)
@@ -299,29 +303,16 @@ void AlarmNetwork::normalize2(std::vector<float> &newCPT, int nvalues, std::vect
                     }
                 }
             }
-            // std::cout << "I'm here2 r col size :: " << rel_cols.size() << std::endl;
             for (int j = 0; j < nvalues; j++)
             {
-                // std::cout<<i+j*cols<<"\n ";
                 float avg = 0.0f;
                 for (auto r : rel_cols)
                     avg += newCPT[r + j * cols];
-                // std::cout << "avg :: " << avg << "\n ";
                 newCPT[i + j * cols] = avg / (rel_cols.size());
             }
         }
-        // float currSum = 0.0f;
-        // for (int j = 0; j < nvalues; j++)
-        //     currSum += newCPT[i + j * cols];
-
-        // if (currSum < 1.0f)
-        // {
-        //     float diff = 1.0f - currSum;
-        //     newCPT[i] += diff;
-        // }
     }
 
-    // std::cout << "Completed!\n";
 }
 
 // debugging
@@ -389,7 +380,7 @@ bool AlarmNetwork::E_step()
 
         // Normalize
         for (int k = 0; k < probs.size(); k++)
-            probs[k] = (float)(probs[k]) / sum;
+            probs[k] /= sum;
 
         this->missingValue[i].second.clear();
         for (auto el : probs)
