@@ -26,7 +26,7 @@ This assignment involved implementing an engine for playing rollerball chess. Th
 The $\mathsf{MaxClique}$ problem was formulated as a Boolean Satisfiability (SAT) problem, and the <code>minisat</code> solver was employed for its resolution. For every vertex $x_i$, we keep $k$ variables $x_{i,r}, 1\leq r\leq k$. $x_{i,r}$ denotes that $x_{i}$ is the $r^{th}$ vertex of the clique. We have the following clauses if we have a clique of size atleast $k$:
 
 1. Two vertices cannot be the in the same clique if they don't have an edge in the original graph. So, for all $r\neq s$:
-    $$\neg e_{i,j} =>  (\neg x_{i,r}) \vee (\neg x_{j,s})$$
+    $$\neg e_{i,j} \implies  (\neg x_{i,r}) \vee (\neg x_{j,s})$$
 
 2. **Cardinality Constraint** : Sum of the booleans must be $k$. For this we use counter variable encoding.
 
