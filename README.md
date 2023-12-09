@@ -33,7 +33,7 @@ The $\mathsf{MaxClique}$ problem was formulated as a Boolean Satisfiability (SAT
 
 ## 4. Medical Diagnosis using Bayesian Networks
 
-**Collaborator:** [Piyush Chauhan](https://www.github.com/PiyushC1408)
+**Collaborator:** [Piyush Chauhan](https://www.github.com/PiyushC1480)
 
 This assignment focused on implementing the EM algorithm to compute the Conditional Probability Table (CPT) tables of a Bayesian Network. The project earned extra credit, and the detailed report can be found [here](https://github.com/AB271202/COL333-Artificial-Intelligence/blob/main/4.%20Medical%20Diagnosis%20with%20Bayesian%20Networks/Report.pdf).
 
