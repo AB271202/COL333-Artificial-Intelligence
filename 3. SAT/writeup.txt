@@ -1,0 +1,12 @@
+1
+None
+# Part1
+
+
+# Part2
+For every vertex x_i, we keep k variables x_{i,r}, 1<=r<=k. x_{i,r} denotes that x_{i} is the rth vertex of the clique. We have the following clauses if we have a clique of size k:
+
+1. Two vertices cannot be the in the same clique if they don't have an edge in the original graph. So, for all r != s:
+    (not e_{i,j}) => (not x_{i,r}) or (not x_{j,s})
+
+2. Cardinality Constraint : Sum of the booleans must be k. For this we use counter variables.

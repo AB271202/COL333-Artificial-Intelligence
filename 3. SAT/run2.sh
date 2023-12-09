@@ -1,0 +1,1 @@
+./obj/decoder $1

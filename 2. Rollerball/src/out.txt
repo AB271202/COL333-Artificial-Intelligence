@@ -1,0 +1,65 @@
+Initial value of coefficients:
+50 -30 30 -10 0 0 1 
+Running ply 0
+in begin search
+Initial Evaluation : -13
+0 nodes covered  testing c2b1 value -19 9 nodes covered  testing c2b3 value -12 18 nodes covered  testing c1b2 value -3 27 nodes covered  testing e2f2 value -8 36 nodes covered  testing e1f1 value -9 45 nodes covered  testing c2b2 value -9 54 nodes covered  testing c1b1 value -13 
+e2f2 e1f1 c2b1 c2b2 c2b3 c1b1 c1b2 
+Final Evaluation : -3
+best c1b2 -3 
+Updated coefficients:
+51 -30 31 -10 0 0 2 
+
+Running ply 1
+in begin search
+Initial Evaluation : -6
+63 nodes covered  testing c2b1 value 107 100 nodes covered  testing c2b3 value -36 130 nodes covered  testing c1b2 value -36 166 nodes covered  testing e2f2 value -16 250 nodes covered  testing e1f1 value -16 321 nodes covered  testing c2b2 value 117 358 nodes covered  testing c1b1 value -44 
+e2f2 e1f1 c2b1 c2b2 c2b3 c1b1 c1b2 
+Final Evaluation : 117
+best c2b2 117 
+Updated coefficients:
+63 -30 43 -10 0 0 14 
+
+Running ply 2
+in begin search
+Initial Evaluation : 78
+386 nodes covered  testing c2b1 value 162 565 nodes covered  testing c2b3 value -31 691 nodes covered  testing c1b2 value -7 837 nodes covered  testing e2f2 value -3 1013 nodes covered  testing e1f1 value -17 1193 nodes covered  testing c2b2 value 172 1360 nodes covered  testing c1b1 value -17 
+e2f2 e1f1 c2b1 c2b2 c2b3 c1b1 c1b2 
+Final Evaluation : 172
+best c2b2 172 
+Updated coefficients:
+72 -30 52 -10 0 0 23 
+
+Running ply 3
+in begin search
+Initial Evaluation : 141
+1504 nodes covered  testing c2b1 value -165 1984 nodes covered  testing c2b3 value -309 3082 nodes covered  testing c1b2 value -309 3589 nodes covered  testing e2f2 value -194 4974 nodes covered  testing e1f1 value -309 5736 nodes covered  testing c2b2 value -165 6213 nodes covered  testing c1b1 value -309 
+e2f2 e1f1 c2b1 c2b2 c2b3 c1b1 c1b2 
+Final Evaluation : -165
+best c2b1 -165 
+Updated coefficients:
+72 -30 52 -30 0 0 23 
+
+Running ply 4
+in begin search
+Initial Evaluation : 101
+7310 nodes covered  testing c2b1 value 278 11986 nodes covered  testing c2b3 value 177 15944 nodes covered  testing c1b2 value 290 21157 nodes covered  testing e2f2 value 290 23888 nodes covered  testing e1f1 value 171 27753 nodes covered  testing c2b2 value 262 31101 nodes covered  testing c1b1 value 208 
+e2f2 e1f1 c2b1 c2b2 c2b3 c1b1 c1b2 
+Final Evaluation : 290
+best c1b2 290 
+Updated coefficients:
+90 -30 70 -30 0 0 41 
+
+Running ply 5
+in begin search
+Initial Evaluation : 227
+36728 nodes covered  testing c2b1 value -602 57546 nodes covered  testing c2b3 value -470 87643 nodes covered  testing c1b2 value -662 108456 nodes covered  testing e2f2 value -602 145699 nodes covered  testing e1f1 value -602 168340 nodes covered  testing c2b2 value -602 190567 nodes covered  testing c1b1 value -662 
+e2f2 e1f1 c2b1 c2b2 c2b3 c1b1 c1b2 
+Final Evaluation : -470
+best c2b3 -470 
+Updated coefficients:
+90 -69 70 -69 0 0 41 
+
+Running ply 6
+in begin search
+Initial Evaluation : 149

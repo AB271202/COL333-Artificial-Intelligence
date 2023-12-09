@@ -1,0 +1,1 @@
+./obj/maxclique $1

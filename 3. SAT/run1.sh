@@ -1,0 +1,1 @@
+./obj/compiler $1
